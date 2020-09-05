@@ -15,3 +15,19 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+#
+#SSR+
+echo "src-git helloworld https://github.com/fw876/helloworld" >> feeds.conf.default
+#
+#
+cd package/lean
+#smartdns
+git clone https://github.com/pymumu/smartdns.git
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
+#
+#svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-ssr-python-pro-server
+#svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-theme-argon-dark-mod
+cd ../..
+#
+./scripts/feeds update -a && ./scripts/feeds install -a
+#rm ./tmp -rf
