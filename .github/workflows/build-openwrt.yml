@@ -9,7 +9,7 @@
 #
 
 name: Build OpenWrt
-
+on: workflow_dispatch
 on:
   repository_dispatch:
   release:
