@@ -24,8 +24,7 @@ cd package/lean
 #smartdns
 git clone https://github.com/pymumu/smartdns.git
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
-git clone https://github.com/kongfl888/luci-app-adguardhome.git
-git clone https://github.com/kongfl888/luci-theme-argon-gray.git
+git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git
 #
 #svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-ssr-python-pro-server
 #svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-theme-argon-dark-mod
