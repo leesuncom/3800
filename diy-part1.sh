@@ -21,6 +21,7 @@ echo "src-git helloworld https://github.com/fw876/helloworld" >> feeds.conf.defa
 #
 #
 cd package/lean
+rm -rf luci-theme-argon
 #smartdns
 git clone https://github.com/pymumu/smartdns.git
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
