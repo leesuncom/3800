@@ -25,8 +25,6 @@ rm -rf luci-theme-argon
 #smartdns
 git clone https://github.com/pymumu/smartdns.git
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git
 #
 #svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-ssr-python-pro-server
 #svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-theme-argon-dark-mod
