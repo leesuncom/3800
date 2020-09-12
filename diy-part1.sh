@@ -30,7 +30,7 @@ git clone https://github.com/kenzok8/openwrt-packages package/kenzol8/package
 #
 #svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-ssr-python-pro-server
 #svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-theme-argon-dark-mod
-cd ../..
+#cd ../..
 #
-./scripts/feeds update -a && ./scripts/feeds install -a
+#./scripts/feeds update -a && ./scripts/feeds install -a
 #rm ./tmp -rf
