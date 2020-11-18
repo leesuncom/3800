@@ -16,21 +16,13 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #
-#SSR+
-echo "src-git helloworld https://github.com/fw876/helloworld" >> feeds.conf.default
+./scripts/feeds update -a
+./scripts/feeds install -a
+
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+
 #
-#
-# cd package/lean
-git clone https://github.com/kenzok8/small package/kenzol8/small
-git clone https://github.com/kenzok8/openwrt-packages package/kenzol8/package
-#smartdns
-#git clone https://github.com/pymumu/smartdns.git
-#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
-#git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git
-#
-#svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-ssr-python-pro-server
-#svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-theme-argon-dark-mod
-#cd ../..
-#
-#./scripts/feeds update -a && ./scripts/feeds install -a
-#rm ./tmp -rf
+./scripts/feeds update -a && ./scripts/feeds install -a
+sed -i 's/+luci-theme-bootstrap / /g' ./feeds/luci/collections/luci/Makefile
