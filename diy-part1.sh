@@ -16,8 +16,8 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #
-./scripts/feeds update -a
-./scripts/feeds install -a
+#./scripts/feeds update -a
+#./scripts/feeds install -a
 
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
@@ -29,5 +29,5 @@ git clone https://github.com/kenzok8/openwrt-packages.git
 git clone https://github.com/kenzok8/small.git
 
 #
-./scripts/feeds update -a && ./scripts/feeds install -a
-sed -i 's/+luci-theme-bootstrap / /g' ./feeds/luci/collections/luci/Makefile
+#./scripts/feeds update -a && ./scripts/feeds install -a
+#sed -i 's/+luci-theme-bootstrap / /g' ./feeds/luci/collections/luci/Makefile
